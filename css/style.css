@@ -1,0 +1,114 @@
+.content_board {
+    margin: auto;
+    margin-top: 60px;
+    border: 20px solid #1848C0;
+    box-shadow: 1px 3px black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.board {
+    border: none;
+}
+
+.board > div {
+    overflow: hidden;
+    height: 110px;
+    border: 2px solid #1848C0;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    transition: background-image 1s;
+}
+
+.boardX {
+    background-image: url("../img/x.png");
+}
+
+.boardO {
+    background-image: url("../img/o.png");
+}
+
+.bgWinnerLine {
+    background-color: #BBCAF0;
+}
+
+#first, #second, #third {
+    border-top: none;
+}
+
+#fourth, #first, #seventh {
+    border-left: none;
+}
+
+#nineth, #eighth, #seventh {
+    border-bottom: none;
+}
+
+#third, #sixth, #nineth {
+    border-right: none;
+}
+
+#restart {
+    height: 34px;
+    margin: auto;
+    display: block;
+    margin-top: 60px;
+    background-color: #0D152B;
+    box-shadow: 1px 2px gray;
+    border: none;
+    color: white;
+    outline: none;
+    border-radius: 4px;
+}
+
+#restart:hover {
+    background-color: #374463;
+}
+
+div.disabled {
+    pointer-events: none;
+}
+div.disabledEmptyItem{
+    pointer-events: none;
+}
+
+.accountContainer {
+    overflow: hidden;
+    margin: auto;
+    height: 80px;
+}
+
+.accountContent {
+    overflow: hidden;
+    margin-top: -10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+
+.account {
+    overflow: hidden;
+    font-size: 24px;
+    color: #0D152B;
+    opacity: 0;
+    display: flex;
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+.account > p{
+    margin: 4px;
+}
+.equal{
+    display: none;
+    margin-top: 16px;
+    margin-left: 60px;
+    font-size: 22px;
+    color: #1848C0;
+}
